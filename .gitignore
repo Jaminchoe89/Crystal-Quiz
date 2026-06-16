@@ -1,0 +1,11 @@
+node_modules
+dist
+*.local
+.DS_Store
+.env
+.env.local
+npm-debug.log*
+
+# Vite / editor transient artifacts (this Dropbox+Windows setup leaves these behind)
+vite.config.ts.timestamp-*.mjs
+*.tmp.*

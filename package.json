@@ -1,0 +1,33 @@
+{
+  "name": "crystal-quiz",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Interactive crystal personality quiz for a live event — touch kiosk + 1:3 display wall, synced over LAN.",
+  "scripts": {
+    "dev": "concurrently -k -n vite,relay -c cyan,magenta \"vite\" \"node server/relay.mjs\"",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node server/relay.mjs",
+    "kiosk": "vite build && node server/relay.mjs",
+    "validate": "node scripts/validate-scoring.mjs",
+    "test:relay": "node scripts/check-relay.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/fraunces": "^5.0.21",
+    "@fontsource-variable/inter": "^5.0.18",
+    "express": "^4.21.1",
+    "motion": "^11.11.17",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "concurrently": "^9.1.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}
