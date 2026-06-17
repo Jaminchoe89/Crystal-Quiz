@@ -608,7 +608,7 @@ img {
 
 /* Touch start screen — hero brand mark above the headline */
 .tw-brand {
-  height: clamp(48px, 7.5vh, 88px);
+  height: clamp(96px, 15vh, 176px);
   width: auto;
   filter: drop-shadow(0 6px 28px rgba(0, 0, 0, 0.45));
 }
