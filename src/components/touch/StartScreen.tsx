@@ -1,5 +1,6 @@
 import { motion } from 'motion/react'
 import { FloatingGems, type GemSpot } from '../shared/FloatingGems'
+import { Logo } from '../shared/Logo'
 
 const ease = [0.22, 1, 0.36, 1] as const
 
@@ -28,6 +29,14 @@ export function StartScreen({ onStart }: { onStart: () => void }) {
       </div>
 
       <div className="tw-start-content">
+        <motion.div
+          initial={{ opacity: 0, y: -14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease }}
+        >
+          <Logo className="tw-brand" />
+        </motion.div>
+
         <motion.h1
           className="tw-find"
           initial={{ opacity: 0, y: 22 }}

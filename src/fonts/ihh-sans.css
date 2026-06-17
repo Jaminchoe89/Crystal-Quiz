@@ -1,0 +1,26 @@
+/* IHH Sans — the client's brand typeface (self-hosted, bundled for offline kiosk use).
+   Three weights ship: Light (300), Regular (400), Bold (700). woff2 first, woff fallback. */
+
+@font-face {
+  font-family: 'IHH Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('./IHHSans-Light.woff2') format('woff2'), url('./IHHSans-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IHH Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./IHHSans-Regular.woff2') format('woff2'), url('./IHHSans-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IHH Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./IHHSans-Bold.woff2') format('woff2'), url('./IHHSans-Bold.woff') format('woff');
+}

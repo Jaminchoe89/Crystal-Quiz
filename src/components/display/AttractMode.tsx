@@ -1,5 +1,6 @@
 import { motion } from 'motion/react'
 import { FloatingGems, type GemSpot } from '../shared/FloatingGems'
+import { Logo } from '../shared/Logo'
 
 // Drift positions tuned for the tall 1:3 wall.
 const SPOTS: GemSpot[] = [
@@ -25,11 +26,18 @@ export function AttractMode() {
       transition={{ duration: 0.8 }}
     >
       <div className="dp-attract-top">
+        <motion.div
+          initial={{ opacity: 0, y: -18 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, ease }}
+        >
+          <Logo className="dp-brand" />
+        </motion.div>
         <motion.span
           className="dp-kicker"
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.8, ease }}
+          transition={{ delay: 0.3, duration: 0.8, ease }}
         >
           Eight crystals · one is yours
         </motion.span>

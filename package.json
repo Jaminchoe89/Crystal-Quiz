@@ -14,8 +14,6 @@
     "test:relay": "node scripts/check-relay.mjs"
   },
   "dependencies": {
-    "@fontsource-variable/fraunces": "^5.0.21",
-    "@fontsource-variable/inter": "^5.0.18",
     "express": "^4.21.1",
     "motion": "^11.11.17",
     "react": "^18.3.1",

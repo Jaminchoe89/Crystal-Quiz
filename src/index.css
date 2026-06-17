@@ -1,6 +1,8 @@
 :root {
-  --font-display: 'Fraunces Variable', Georgia, 'Times New Roman', serif;
-  --font-ui: 'Inter Variable', system-ui, -apple-system, sans-serif;
+  /* IHH Sans is the client's brand typeface and the only family used app-wide.
+     Display = Bold IHH Sans for headlines; UI = IHH Sans for everything else. */
+  --font-display: 'IHH Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-ui: 'IHH Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
 
   --ink-900: #07070b;
   --ink-800: #0c0c14;
@@ -103,7 +105,7 @@ img {
 }
 .lc h1 {
   font-family: var(--font-display);
-  font-weight: 400;
+  font-weight: 700;
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   letter-spacing: -0.02em;
 }
@@ -144,6 +146,7 @@ img {
 }
 .lc-card .t {
   font-family: var(--font-display);
+  font-weight: 700;
   font-size: 1.5rem;
 }
 .lc-card .d {
@@ -222,10 +225,10 @@ img {
 }
 .tw-find {
   font-family: var(--font-display);
-  font-weight: 400;
+  font-weight: 700;
   font-size: clamp(3.4rem, 9vw, 6.5rem);
   line-height: 1.02;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.005em;
   text-transform: uppercase;
   color: var(--text);
   text-shadow: 0 6px 40px rgba(0, 0, 0, 0.5);
@@ -238,7 +241,7 @@ img {
 }
 .tw-title {
   font-family: var(--font-display);
-  font-weight: 400;
+  font-weight: 700;
   font-size: clamp(3rem, 7vw, 5.5rem);
   line-height: 1.02;
   letter-spacing: -0.025em;
@@ -277,7 +280,7 @@ img {
 }
 .tw-prompt {
   font-family: var(--font-display);
-  font-weight: 400;
+  font-weight: 700;
   font-size: clamp(1.9rem, 4vw, 3.1rem);
   letter-spacing: -0.02em;
   text-align: center;
@@ -379,6 +382,7 @@ img {
 }
 .tw-result-name {
   font-family: var(--font-display);
+  font-weight: 700;
   font-size: clamp(2.6rem, 6vw, 4.5rem);
   letter-spacing: -0.02em;
 }
@@ -458,7 +462,7 @@ img {
 }
 .dp-wordmark {
   font-family: var(--font-display);
-  font-weight: 400;
+  font-weight: 700;
   font-size: clamp(2.4rem, 7vw, 5rem);
   line-height: 1.05;
   letter-spacing: -0.02em;
@@ -497,6 +501,7 @@ img {
 }
 .dp-progress-count {
   font-family: var(--font-display);
+  font-weight: 700;
   font-size: clamp(4rem, 22vw, 12rem);
   line-height: 1;
 }
@@ -543,7 +548,7 @@ img {
 }
 .dp-reveal-name {
   font-family: var(--font-display);
-  font-weight: 400;
+  font-weight: 700;
   font-size: clamp(3rem, 13vw, 8rem);
   line-height: 1;
   letter-spacing: -0.02em;
@@ -590,4 +595,41 @@ img {
 .conn.is-on {
   background: #59c98a;
   opacity: 0.35;
+}
+
+/* ----------------------------------------------------------------------------
+   Brand (IHH logo lockups)
+---------------------------------------------------------------------------- */
+.brand img,
+.brand {
+  width: auto;
+  user-select: none;
+}
+
+/* Touch start screen — hero brand mark above the headline */
+.tw-brand {
+  height: clamp(48px, 7.5vh, 88px);
+  width: auto;
+  filter: drop-shadow(0 6px 28px rgba(0, 0, 0, 0.45));
+}
+
+/* Small persistent mark (touch question header + footers) */
+.brand-mark {
+  height: clamp(24px, 3.2vh, 38px);
+  width: auto;
+  opacity: 0.8;
+}
+
+/* Display wall (1:3) — large brand mark at the top of the column */
+.dp-brand {
+  height: clamp(96px, 13vh, 220px);
+  width: auto;
+  filter: drop-shadow(0 8px 36px rgba(0, 0, 0, 0.45));
+}
+
+/* Footer brand on the tall reveal wall */
+.dp-brand-foot {
+  height: clamp(40px, 5vh, 76px);
+  width: auto;
+  opacity: 0.85;
 }

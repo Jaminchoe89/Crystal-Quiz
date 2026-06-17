@@ -2,6 +2,7 @@ import { motion } from 'motion/react'
 import type { AnswerOption, Question } from '../../types'
 import { OptionTile } from './OptionTile'
 import { ProgressDots } from './ProgressDots'
+import { Logo } from '../shared/Logo'
 
 const ease = [0.22, 1, 0.36, 1] as const
 
@@ -23,6 +24,7 @@ export function QuestionScreen({ question, index, total, locked, onPick }: Props
       transition={{ duration: 0.5, ease }}
     >
       <div className="tw-qhead">
+        <Logo className="brand-mark" />
         <ProgressDots total={total} current={index} />
         <motion.h2
           className="tw-prompt"

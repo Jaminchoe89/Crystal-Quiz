@@ -1,5 +1,6 @@
 import { motion } from 'motion/react'
 import { Atmosphere } from './shared/Atmosphere'
+import { Logo } from './shared/Logo'
 
 const ease = [0.22, 1, 0.36, 1] as const
 
@@ -10,7 +11,10 @@ export function Launcher() {
     <div className="screen">
       <Atmosphere />
       <div className="lc">
-        <motion.h1 initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease }}>
+        <motion.div initial={{ opacity: 0, y: -12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease }}>
+          <Logo className="tw-brand" />
+        </motion.div>
+        <motion.h1 initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1, duration: 0.7, ease }}>
           Crystal Quiz
         </motion.h1>
         <motion.p

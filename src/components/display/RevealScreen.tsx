@@ -2,6 +2,7 @@ import { motion } from 'motion/react'
 import type { CrystalId } from '../../types'
 import { CRYSTALS } from '../../data/crystals'
 import { CrystalImage } from '../shared/CrystalImage'
+import { Logo } from '../shared/Logo'
 
 const ease = [0.22, 1, 0.36, 1] as const
 
@@ -138,6 +139,15 @@ export function RevealScreen({ crystalId }: { crystalId: CrystalId }) {
             {t}
           </span>
         ))}
+      </motion.div>
+
+      <motion.div
+        style={{ marginTop: '2vh' }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.55, duration: 0.8, ease }}
+      >
+        <Logo className="dp-brand-foot" />
       </motion.div>
     </motion.div>
   )
