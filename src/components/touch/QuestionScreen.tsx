@@ -26,14 +26,6 @@ export function QuestionScreen({ question, index, total, locked, onPick }: Props
       <div className="tw-qhead">
         <Logo className="brand-mark" />
         <ProgressDots total={total} current={index} />
-        <motion.h2
-          className="tw-prompt"
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.08, duration: 0.5, ease }}
-        >
-          {question.prompt}
-        </motion.h2>
       </div>
 
       <div className="tw-grid">
