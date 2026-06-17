@@ -44,9 +44,9 @@ export const QUESTIONS: Question[] = [
     id: 'afternoon',
     prompt: 'An afternoon feels best...',
     options: [
-      { id: 'friends', label: 'With friends', image: 'q4-friends', scores: { 'strawberry-quartz': 2, 'rose-quartz': 1 } },
-      { id: 'garden', label: 'In the garden', image: 'q4-garden', scores: { aventurine: 2, citrine: 1 } },
-      { id: 'studio', label: 'Clean & clear', image: 'q4-studio', scores: { 'clear-quartz': 2, obsidian: 1 } },
+      { id: 'friends', label: 'Meal with friends', image: 'q4-friends', scores: { 'strawberry-quartz': 2, 'rose-quartz': 1 } },
+      { id: 'garden', label: 'Morning in the garden', image: 'q4-garden', scores: { aventurine: 2, citrine: 1 } },
+      { id: 'studio', label: 'A clear schedule', image: 'q4-studio', scores: { 'clear-quartz': 2, obsidian: 1 } },
       { id: 'water', label: 'By the water', image: 'q4-water', scores: { aquamarine: 2, amethyst: 1 } },
     ],
   },
