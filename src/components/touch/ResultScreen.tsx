@@ -1,6 +1,5 @@
 import { motion } from 'motion/react'
 import type { Crystal } from '../../types'
-import { Logo } from '../shared/Logo'
 
 const ease = [0.22, 1, 0.36, 1] as const
 
@@ -87,15 +86,6 @@ export function ResultScreen({ crystal, onRestart }: Props) {
       >
         Start again
       </motion.button>
-
-      <motion.div
-        style={{ marginTop: '1.75rem' }}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.15, duration: 0.6 }}
-      >
-        <Logo className="brand-mark" />
-      </motion.div>
     </motion.div>
   )
 }
