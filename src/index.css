@@ -549,9 +549,12 @@ img {
 .dp-reveal-name {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(3rem, 13vw, 8rem);
+  /* Floor kept low so long single-word names (e.g. Obsidian, Aquamarine) scale
+     down to fit narrow / low-res 1:3 walls instead of being clipped at the edges. */
+  font-size: clamp(1.5rem, 12vw, 8rem);
   line-height: 1;
   letter-spacing: -0.02em;
+  max-width: 100%;
 }
 .dp-reveal-arch {
   font-size: clamp(1.2rem, 4vw, 2.4rem);
