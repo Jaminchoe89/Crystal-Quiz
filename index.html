@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="color-scheme" content="dark" />
     <title>Crystal Quiz</title>
+    <script>
+      // Fullscreen on Chrome (kiosk). Chrome only allows fullscreen from a user
+      // gesture, so request it on the first tap / click / key press. Covers both
+      // the touch screen (?screen=touch) and the display wall (?screen=display).
+      (function () {
+        function goFullscreen() {
+          if (document.fullscreenElement) return;
+          var el = document.documentElement;
+          var req = el.requestFullscreen || el.webkitRequestFullscreen || el.msRequestFullscreen;
+          if (req) { try { var r = req.call(el); if (r && r.catch) r.catch(function () {}); } catch (e) {} }
+        }
+        ['click', 'keydown', 'touchstart'].forEach(function (evt) {
+          window.addEventListener(evt, goFullscreen, { once: true });
+        });
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
