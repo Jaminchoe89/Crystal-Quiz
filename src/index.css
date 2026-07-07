@@ -270,6 +270,25 @@ img {
   letter-spacing: 0.02em;
 }
 
+/* Preface (instruction shown before the first question) */
+.tw-preface {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  text-align: center;
+  padding: 2rem;
+}
+.tw-preface-head {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+
 /* Question */
 .tw-qhead {
   display: flex;
