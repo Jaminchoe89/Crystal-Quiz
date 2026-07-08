@@ -41,8 +41,7 @@ export function PrefaceScreen({ onBegin }: { onBegin: () => void }) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.32, duration: 0.7, ease }}
       >
-        There are no right answers. Go with your first instinct and pick whatever
-        appeals to you most.
+        Go with your first instinct and pick whatever appeals to you most.
       </motion.p>
 
       <motion.button
