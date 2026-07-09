@@ -651,7 +651,7 @@ img {
 
 /* Footer brand on the tall reveal wall */
 .dp-brand-foot {
-  height: clamp(40px, 5vh, 76px);
+  height: clamp(80px, 10vh, 152px);
   width: auto;
   opacity: 0.85;
 }
