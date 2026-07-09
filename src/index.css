@@ -649,9 +649,10 @@ img {
   filter: drop-shadow(0 8px 36px rgba(0, 0, 0, 0.45));
 }
 
-/* Footer brand on the tall reveal wall */
+/* Footer brand on the tall reveal wall — sized so the mark spans half the
+   screen width on the portrait wall (viewBox is square, art centered). */
 .dp-brand-foot {
-  height: clamp(80px, 10vh, 152px);
-  width: auto;
+  width: 50vw;
+  height: auto;
   opacity: 0.85;
 }
